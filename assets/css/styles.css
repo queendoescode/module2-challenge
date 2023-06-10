@@ -23,7 +23,7 @@ background-color: rgb(28, 224, 90);
 }
 
 .work-container {
-  width: 50%;
+  width: 90%;
   margin: 2px;
   padding-left: 50px;
   border-left: 5px gray solid;
@@ -117,7 +117,7 @@ justify-content:space-between;
 background-color: rgb(126, 111, 111);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   header {
     display: block;
   }
