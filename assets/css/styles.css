@@ -22,6 +22,50 @@ background-color: rgb(28, 224, 90);
  position: relative;
 }
 
+.work-container {
+  width: 50%;
+  margin: 2px;
+  padding-left: 50px;
+  border-left: 5px gray solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.work-image {
+  background-color: red;
+  height: 500px;
+  position: relative;
+  flex-basis: 98%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border: 5px solid cadetblue;
+  margin: 3px;
+  
+}
+
+.work-image.small {
+  height: 150px;
+  flex-basis: 48%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  
+  
+  
+}
+
+h4 {
+  position:absolute;
+  left: 0px;
+  bottom: 5px;
+  background-color: blue;
+  padding: 20px;
+  color: gray;
+
+}
+
+
 h3 {
   position:absolute;
   right: 50px;
