@@ -1,10 +1,13 @@
-
+:root {
+  --section-heading-colour: rgb(123, 180, 177);
+  --light-background-colour: rgb(121, 232, 213);
+}
 
 h1 {
-  margin: 0;
+  margin: 20px 0 20px 0;
   font-size: 60px;
 padding-left: 100px;
-background-color: rgb(28, 224, 90);
+background-color: var(--light-background-colour);
  
 }
 
@@ -16,15 +19,23 @@ background-color: rgb(28, 224, 90);
  position: relative;
 }
 
-.work-container {
-  width: 90%;
-  margin: 2px;
+.section-body {
   padding-left: 50px;
   border-left: 5px gray solid;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 750px;
+}
+
+.work-container {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .work-image {
@@ -34,7 +45,7 @@ background-color: rgb(28, 224, 90);
   flex-basis: 98%;
   flex-grow: 0;
   flex-shrink: 0;
-  border: 5px solid cadetblue;
+  border: 5px solid var(--section-heading-colour);
   margin: 3px;
   
 }
@@ -53,9 +64,9 @@ h4 {
   position:absolute;
   left: 0px;
   bottom: 5px;
-  background-color: blue;
+  background-color:var(--section-heading-colour);
   padding: 20px;
-  color: gray;
+  color: black;
 
 }
 
@@ -65,9 +76,11 @@ h3 {
   right: 50px;
   bottom: 40px;
   margin: 0;
-  background-color: gray;
-  padding: 20px;
+  background-color: var(--light-background-colour);
+  padding: 2px;
   font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 35px;
 }
 
 
@@ -89,9 +102,7 @@ h2 {
   h2 {
     font-size: 32px;
   }
-  h3 {
-    font-size: 30px;
-  }
+  
 }
 
 nav {
@@ -105,17 +116,21 @@ nav {
 
 a {
   margin: 5px;
-  border-bottom: 2px solid rgb(28, 224, 90);
+  border-bottom: 2px solid var(--light-background-colour);
   padding: 10px;
   font-size: 20px;
   text-decoration: none;
-  color:rgb(28, 224, 90);
+  color: black;
+}
+
+nav a {
+  color: var(--light-background-colour)
 }
 
 header {
 display: flex;
 justify-content:space-between;
-background-color: rgb(126, 111, 111);
+background-color: var(--section-heading-colour);
 }
 
 @media screen and (max-width: 1000px) {
@@ -130,13 +145,6 @@ body {
   margin: 0;
 }
 
-p {
-  padding-left: 50px;
-  border-left: 5px gray solid;
-  font-size: 20px;
-  line-height: 1.5;
-  max-width: 750px;
-}
 
 section {
 display: flex;
