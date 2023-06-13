@@ -1,3 +1,6 @@
+/* CSS variables need to be under element :root 
+   if they are used throughout the file (global) */
+
 :root {
   --section-heading-colour: rgb(123, 180, 177);
   --light-background-colour: rgb(121, 232, 213);
@@ -6,19 +9,60 @@
 h1 {
   margin: 20px 0 20px 0;
   font-size: 60px;
-padding-left: 100px;
-background-color: var(--light-background-colour);
+  padding-left: 100px;
+  background-color: var(--light-background-colour);
  
+}
+
+h2 { 
+  color:rgb(123, 180, 177);
+  flex-basis: 20%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: right ;
+  padding-right: 10px;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  position:absolute;
+  right: 50px;
+  bottom: 40px;
+  margin: 0;
+  background-color: var(--light-background-colour);
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 35px;
+}
+
+h4 {
+  position:absolute;
+  left: 0px;
+  bottom: 5px;
+  background-color:var(--section-heading-colour);
+  padding: 20px;
+  color: black;
+
 }
 
 .banner-image {
   width: 100%;
   height: 200px;
   background-color: rgb(150, 30, 60);
- font-size: 40px; color:rgb(28, 224, 90);
- position: relative;
- background-image: url("../images/floral-g3294bb7a7_1280.jpg");
- background-size: cover;
+  font-size: 40px; color:rgb(28, 224, 90);
+  position: relative;
+  background-image: url("../images/floral-g3294bb7a7_1280.jpg");
+  background-size: cover;
 }
 
 .banner-image img {
@@ -32,9 +76,8 @@ background-color: var(--light-background-colour);
 }
 
 p {
-  font-size: 20px;
-  line-height: 1.5;
   max-width: 750px;
+  line-height: 1.5;
 }
 
 .work-container {
@@ -51,7 +94,12 @@ p {
   flex-shrink: 0;
   border: 5px solid var(--section-heading-colour);
   margin: 3px;
-  
+  background-color: grey;
+}
+
+.work-image:hover {
+  cursor: pointer;
+
 }
 
 .work-image img {
@@ -59,61 +107,21 @@ p {
   height: 100%;
 }
 
+.work-image img:hover {
+  cursor: pointer;
+  filter: brightness(1.3);
+}
+
 .work-image.small {
-  height: 200px;
-  flex-basis: 48%;
+  height: 250px;
+  flex-basis: 47%;
   flex-grow: 1;
-  flex-shrink: 0;
 }
 
-.work-image.small img {
-  height: auto;
-  object-position: 0 -180px;
-}
-
-h4 {
-  position:absolute;
-  left: 0px;
-  bottom: 5px;
-  background-color:var(--section-heading-colour);
-  padding: 20px;
-  color: black;
-
-}
-
-
-h3 {
-  position:absolute;
-  right: 50px;
-  bottom: 40px;
-  margin: 0;
-  background-color: var(--light-background-colour);
-  padding: 2px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-size: 35px;
-}
-
-
-h2 { 
-  color:rgb(123, 180, 177);
-  flex-basis: 20%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  text-align: right ;
-  padding-right: 10px;
-  font-size: 50px;
-}
-
-
-@media screen and (max-width: 900px) {
-  h1 {
-    font-size: 45px;
+@media screen and (max-width: 700px) {
+  .work-image.small {
+    height: 170px;
   }
-  h2 {
-    font-size: 32px;
-  }
-  
 }
 
 nav {
@@ -122,7 +130,6 @@ nav {
   justify-content: end;
   align-items: center;
   padding-right: 100px;
-
 }
 
 a {
@@ -139,9 +146,9 @@ nav a {
 }
 
 header {
-display: flex;
-justify-content:space-between;
-background-color: var(--section-heading-colour);
+  display: flex;
+  justify-content:space-between;
+  background-color: var(--section-heading-colour);
 }
 
 @media screen and (max-width: 1000px) {
@@ -151,14 +158,11 @@ background-color: var(--section-heading-colour);
 }
 
 body {
-  
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
   margin: 0;
 }
 
-
 section {
-display: flex;
-
-
+  display: flex;
 }
