@@ -27,6 +27,7 @@ h2 {
 @media screen and (max-width: 900px) {
   h1 {
     font-size: 45px;
+    padding-left: 50px;
   }
   h2 {
     font-size: 32px;
@@ -48,10 +49,11 @@ h3 {
 h4 {
   position:absolute;
   left: 0px;
-  bottom: 5px;
+  bottom: 20px;
   background-color:var(--section-heading-colour);
   padding: 20px;
   color: black;
+  margin: 0;
 
 }
 
@@ -122,27 +124,33 @@ p {
   .work-image.small {
     height: 170px;
   }
+  h4 {
+    padding: 10px;
+    bottom: 10px;
+  }
 }
 
 nav {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  align-items: center;
+  align-items: end;
   padding-right: 100px;
 }
 
 a {
-  margin: 5px;
+  margin: 0 0 20px 10px;
   border-bottom: 2px solid var(--light-background-colour);
   padding: 10px;
   font-size: 20px;
   text-decoration: none;
   color: black;
+  line-height: 2.5;
 }
 
 nav a {
-  color: var(--light-background-colour)
+  color: var(--light-background-colour);
+  line-height: 1;
 }
 
 header {
@@ -154,6 +162,9 @@ header {
 @media screen and (max-width: 1000px) {
   header {
     display: block;
+  }
+  nav {
+    padding-right: 50px;
   }
 }
 

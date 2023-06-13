@@ -12,15 +12,21 @@ The features of this site include:
 - Media queries were used to control break points to support different devices and screen sizes
 - CSS variables were used to make colors consistent on the page
 
-## Screenshot
+## Screencastify
 
-![A screenshot of my portfolio site]()
+![screencastify to display the features of my project](Queendoescode%20-%20My%20Portfolio.gif)
+
+## Screenshots
+
+![A screenshot of my portfolio site](Screen%20Shot%202023-06-12%20at%2011.24.45%20PM.png)
+
+![A screenshot of my portfolio site](Screen%20Shot%202023-06-12%20at%2011.24.57%20PM.png)
 
 ## Links
 
 * [GitHub](https://github.com/queendoescode/module2-challenge)
 
-* [Deployed site]()
+* [Deployed site](https://queendoescode.github.io/module2-challenge/)
 
 ## Third Party Resources used by this site
 
